@@ -4,7 +4,28 @@ class UserSignupPage extends React.Component {
 
     render() {
         return (
-            <h1>Sign Up</h1>
+            <form>
+                <h1>Sign Up</h1>
+                <div>
+                <label>Username</label>
+                <input/>
+                </div>
+                <div>
+                <label>Display Name</label>
+                <input/>
+                </div>
+                <div>
+                <label>password</label>
+                <input type= "password"/>
+                </div>
+                <div>
+                <label>password Repeat</label>
+                <input type= "password"/>
+                </div>
+                <button>Sign Up</button>
+             
+            </form>
+            
         );
     }
 }
