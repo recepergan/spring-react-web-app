@@ -2,7 +2,6 @@ package com.hoaxify.ws.user;
 
 
 import lombok.Data;
-import org.springframework.web.bind.annotation.PathVariable;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
@@ -19,6 +18,7 @@ public class User {
 
 	@NotNull
 	@Size(min = 4,max = 255)
+	@Column(unique = true)
 	private String username;
 
 	@NotNull
