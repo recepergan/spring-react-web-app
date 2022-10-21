@@ -1,9 +1,10 @@
 package com.hoaxify.ws.user;
 
-import com.sun.istack.NotNull;
+
 import lombok.Data;
 
 import javax.persistence.*;
+import javax.validation.constraints.NotNull;
 
 @Data
 @Entity// @Table ile databasedeki tablo adını istediğimiz şekilde belirleyebiliriz
