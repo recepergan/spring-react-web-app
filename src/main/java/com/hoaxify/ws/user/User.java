@@ -17,6 +17,7 @@ public class User {
 	private long id;
 
 	@NotNull
+	@UniqueUserName
 	@Size(min = 4,max = 255)
 	@Column(unique = true)
 	private String username;
