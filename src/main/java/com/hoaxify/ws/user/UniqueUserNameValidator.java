@@ -10,6 +10,10 @@ public class UniqueUserNameValidator implements ConstraintValidator<UniqueUserNa
     @Autowired
     UserRepository userRepository;
 
+    public UniqueUserNameValidator(UserRepository userRepository) {
+        this.userRepository = userRepository;
+    }
+
     @Override
     public boolean isValid(String username, ConstraintValidatorContext context) {
 
