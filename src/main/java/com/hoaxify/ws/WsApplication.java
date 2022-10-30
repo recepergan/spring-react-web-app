@@ -9,7 +9,7 @@ import org.springframework.context.annotation.Bean;
 import com.hoaxify.ws.user.User;
 import com.hoaxify.ws.user.UserService;
 
-@SpringBootApplication(exclude = SecurityAutoConfiguration.class)
+@SpringBootApplication
 public class WsApplication {
 
 	public static void main(String[] args) {

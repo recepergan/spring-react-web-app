@@ -39,7 +39,7 @@ public class AuthController {
             return ResponseEntity.status(HttpStatus.UNAUTHORIZED).body(error);
         }
         String base64encoded = authorization.split("Basic ")[1]; //dXNlcjE6UDRzc3dvcmQ
-        String decoded = new String(Base64.getDecoder().decode(base64encoded)); //user1
+        String decoded = new String(Base64.getDecoder().decode(base64encoded)); //user1:P4ssword
         String[] parts = decoded.split(":"); // "user1", "P4ssword"
         String username = parts[0];
         String password = parts[1];
